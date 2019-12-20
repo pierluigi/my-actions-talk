@@ -4,4 +4,4 @@ assignees: pierluigi
 labels: bug, enhancement
 ---
 
-{{ payload }}
+{{ payload.client_payload.description }}
