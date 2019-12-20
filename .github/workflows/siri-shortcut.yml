@@ -14,5 +14,5 @@ jobs:
             console.log(context.payload);
             
             const title = "Testing";
-            github.issues.create({owner: github.actor, repo: github.repository, title })
+            github.issues.create({owner: context.github.actor, repo: context.github.repository, title })
    
