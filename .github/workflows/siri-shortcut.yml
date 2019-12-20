@@ -16,7 +16,7 @@ jobs:
             const title = "Testing";
             github.issues.create({
               owner: context.payload.sender.login, 
-              repo: context.github.repository, 
+              repo: context.payload.repository.full_name, 
               title 
             })
    
