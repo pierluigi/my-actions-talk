@@ -6,17 +6,6 @@ jobs:
   create-issue:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/github-script@0.3.0
-        with:
-          github-token: ${{github.token}}
-          script: |
-            console.log("PAYLOAD");
-            console.log(context.payload);
-            
-            const title = "Testing";
-            github.issues.create({
-              owner: context.payload.sender.login, 
-              repo: context.payload.repository.full_name, 
-              title 
-            })
-   
+      - uses: JasonEtco/create-an-issue@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
