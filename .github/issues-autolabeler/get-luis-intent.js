@@ -1,5 +1,5 @@
 const luisAppId = process.env.LUIS_APP_ID;
-const endpointKey = process.env.LUIS_ENDPOINT_KEY;
+const endpointKey = process.env.LUIS_APP_KEY;
 
 module.exports = function (utterance) {
   const request = require('request');
