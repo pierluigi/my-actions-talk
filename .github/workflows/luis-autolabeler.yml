@@ -1,0 +1,33 @@
+name: LUIS Issue Autolabeler
+
+on:
+  issues: 
+    types: [opened]
+
+jobs:
+  comment:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 10.x 
+      - run: npm install
+        working-directory: ./.github/actions/issues-autolabeler
+      - name: label_issue
+        uses: ./.github/actions/issues-autolabeler
+        with:
+          issue: ${{github.event.issue}}
+      - uses: actions/github-script@0.3.0
+        if: success()
+        with:
+          github-token: ${{github.token}}
+          script: |
+            const body = `
+            
+            *Status*: ✅ Good
+          
+            `;
+            github.issues.createComment({...context.issue, body })
+ 
+
