@@ -1,3 +1,4 @@
+const core = require("@actions/core");
 const getLuisIntent = require('./get-luis-intent');
 
 async function run() {
