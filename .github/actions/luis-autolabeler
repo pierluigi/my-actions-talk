@@ -1,0 +1,13 @@
+name: LUIS Cognitive Language Understanding Autolabeler
+author: Pierluigi Cau
+description: Automatically label issues (bug, question, enhancement) using the Microsoft LUIS AI
+branding:
+  color: blue
+  icon: code
+inputs:
+  issue:
+    description: The issue we need to label
+    required: true
+runs:
+  using: node12
+  main: main.js
