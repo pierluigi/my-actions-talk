@@ -12,9 +12,8 @@ Watch demo video on YouTube https://youtu.be/CQnnlLfVhW0
 
 1. Fork my repository https://github.com/pierluigi/actions-...
 2. Generate a new Personal Access Token with repo permissions https://github.com/settings/tokens
-3. Install my Siri Shortcut by following this iCloud link on your iPhone: https://www.icloud.com/shortcuts/0f28...
-and edit the newly imported shortcut. 
-4. Change the USERNAME, REPOSITORY in the URL field, and add your PAT in the "Get contents of URL" shortcut inside Show More -  Headers - Authorization.
+3. Install my Siri Shortcut by following this iCloud link on your iPhone: https://www.icloud.com/shortcuts/0f28733463b94c8fafda83c23801be4d 
+4. Open the Shortcuts and change the `USERNAME` and `REPOSITORY` with your own GitHub values (e.g. `pierluigi` and `actions-demo` in this case) inside the `URL` field. Expand the "Get contents of URL" section `Show More ->  Headers - Authorization` and add your own GitHub PAT.
 
 Done! Have fun filing bug reports using Siri ;)
 
