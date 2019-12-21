@@ -12,6 +12,8 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 10.x
+      - run: npm install
+        working-directory: ./.github/issues-autolabeler
       - name: label_issue
         uses: ./.github/issues-autolabeler
       - uses: actions/github-script@0.3.0
