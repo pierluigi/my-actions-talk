@@ -3,11 +3,12 @@ const getLuisIntent = require('./get-luis-intent');
 async function run() {
   try {
     const issue = core.getInput("issue", { required: true });
-    const { number, title } = issue;
+    console.log("ISSUE", issue);
     
-    const label = await getLuisIntent(title);
+    const { body } = issue;
+    const label = await getLuisIntent(body);
 
-    console.log(label);
+    console.log("LABEL", label);
 
   } catch (error) {
     console.error(error.message);
