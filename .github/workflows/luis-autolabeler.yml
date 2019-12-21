@@ -2,10 +2,10 @@ name: LUIS Issue Autolabeler
 
 on:
   issues: 
-    types: opened
+    types: [opened]
 
 jobs:
-  comment:
+  autolabeler:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
@@ -14,8 +14,6 @@ jobs:
           node-version: 10.x
       - name: label_issue
         uses: ./.github/issues-autolabeler
-        with:
-          issue: ${{github.event.issue}}
       - uses: actions/github-script@0.3.0
         if: success()
         with:
