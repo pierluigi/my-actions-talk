@@ -6,8 +6,7 @@ async function run() {
     const issue = core.getInput("issue", { required: true });
     console.log("ISSUE", issue);
     
-    const { body } = issue;
-    const label = await getLuisIntent(body);
+    const label = await getLuisIntent(issue);
 
     console.log("LABEL", label);
 
