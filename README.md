@@ -21,6 +21,3 @@ Watch demo video on YouTube https://youtu.be/CQnnlLfVhW0
 
 Done! Have fun filing bug reports using Siri ;)
 
-### Credits
-
-- https://github.com/JasonEtco/create-an-issue by JasonEtco
