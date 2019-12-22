@@ -17,10 +17,11 @@ module.exports = function (utterance) {
 
   return new Promise((resolve, reject) => {
     request(luisRequest, (err, _, body) => {
-        if (err) reject(err)
+        if (err) reject(err);
         
         const data = JSON.parse(body);
-        console.log("DATA", data);
+        if (data.error) reject(data.err);
+
         resolve(data.topScoringIntent.intent.toLowerCase());
       })
   });
