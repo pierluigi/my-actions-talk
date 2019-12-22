@@ -8,6 +8,7 @@ async function run() {
     
     const label = await getLuisIntent(issue);
     console.log("Received label: ", label);
+    core.exportVariable("ISSUE_LABEL", label);
 
   } catch (error) {
     console.error(error.message);
