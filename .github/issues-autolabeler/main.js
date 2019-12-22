@@ -4,11 +4,10 @@ const getLuisIntent = require('./get-luis-intent');
 async function run() {
   try {
     const issue = core.getInput("issue", { required: true });
-    console.log("ISSUE", issue);
+    console.log("Sending utterance to LUIS endpoint: ", issue);
     
     const label = await getLuisIntent(issue);
-
-    console.log("LABEL", label);
+    console.log("Received label: ", label);
 
   } catch (error) {
     console.error(error.message);
