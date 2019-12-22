@@ -29,8 +29,11 @@ jobs:
             const body = `
             
             *Status*: ✅ Good
-          
+            \`\`\`
+            Label: ${process.env.ISSUE_LABEL}
+            \`\`\`
             `;
             github.issues.createComment({...context.issue, body })
+            github.issues.addLabels({...context.issue, labels: [${process.env.ISSUE_LABEL}]})
  
 
