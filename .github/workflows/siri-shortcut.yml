@@ -31,4 +31,5 @@ jobs:
             const { body, owner, repository } = process.env;
             const title = "New issue report";
             const user_repo = repository.split('/');
-            github.issues.create({ owner, repo: user_repo[0], title, body, labels: [process.env.ISSUE_LABEL] })
+
+            github.issues.create({ owner, repo: user_repo[1], title, body, labels: [process.env.ISSUE_LABEL] })
