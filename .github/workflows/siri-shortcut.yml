@@ -28,7 +28,7 @@ jobs:
         with:
           github-token: ${{github.token}}
           script: |
-            const { body, owner, repo }} = process.env;
+            const { body, owner, repo } = process.env;
             const title = "New issue report";
             const user_repo = repository.split('/');
             github.issues.create({ owner, repo: user_repo[0], title, body, labels: [process.env.ISSUE_LABEL] })
