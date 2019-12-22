@@ -20,6 +20,7 @@ module.exports = function (utterance) {
         if (err) reject(err)
         
         const data = JSON.parse(body);
+        console.log("DATA", data);
         resolve(data.topScoringIntent.intent.toLowerCase());
       })
   });
