@@ -18,6 +18,9 @@ jobs:
         uses: ./.github/issues-autolabeler
         with:
           issue: ${{github.event.issue.body}}
+        env:
+          LUIS_APP_ID: ${{ secrets.LUIS_APP_ID }}
+          LUIS_APP_KEY: ${{ secrets.LUIS_APP_KEY }}
       - uses: actions/github-script@0.3.0
         if: success()
         with:
