@@ -4,6 +4,10 @@
 
 Use Siri and the power of GitHub Actions to automate the creation of a new "bug report" issue on your GitHub Project using voice recognignition!
 
+### WORK IN PROGRESS
+
+Currently working on introducing LUIS AI moderation. Stay tuned!
+
 ### Demo
 
 Watch demo video on YouTube https://youtu.be/CQnnlLfVhW0
