@@ -3,7 +3,7 @@ name: Siri Shortcut
 on: repository_dispatch  
 
 jobs:
-  create-issue:
+  label-issue:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
@@ -19,8 +19,11 @@ jobs:
         env:
           LUIS_APP_ID: ${{ secrets.LUIS_APP_ID }}
           LUIS_APP_KEY: ${{ secrets.LUIS_APP_KEY }}
+  create-issue:
+    runs-on: ubuntu-latest
+    needs: 'label-issue'
+    steps:
       - uses: actions/github-script@0.3.0
-        if: success()
         env:
           owner: ${{ github.actor }}
           body: ${{ github.event.client_payload.description }}
