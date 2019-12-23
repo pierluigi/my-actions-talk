@@ -5,22 +5,27 @@ This is the repository referenced in [my GitHub Actions talk](https://docs.googl
 ## Demos
 This repository contains the code to run the following demos as part of my talk.
 
-### 1. Simple CI/CD with NodeJS
+### Demo 1. ⚡️ Simple CI/CD with NodeJS
 
 TODO
 
-### 2. Advanced CI with self-hosted runners
+### Demo 2. 📡 Advanced CI with self-hosted runners
 
 TODO
 
-### 3. File a bug using Siri and AI
+### Demo 3. 🗣 File a bug using Siri and AI
 
 In this demo we will learn how to use Siri Shortcuts and the [LUIS Cognitive Services API](https://www.luis.ai/) to automate the creation of a new "bug report" issue on your GitHub Project using voice recognignition and machine learning for automatic triaging.
 
 Watch a prerecoreded demo video on my YouTube channel to see what this is about: https://youtu.be/CQnnlLfVhW0
 
-**Instructions**
-To recreate this demo simply follow these steps:
+**Create your LUIS AI Cognitive Service Endpoint**
+
+TODO
+
+**Import the Siri Shortcut**
+
+To recreate this demo follow these steps:
 
 1. Fork this repository (https://github.com/pierluigi/my-actions-talk)
 2. Generate a new Personal Access Token with `repo` permissions https://github.com/settings/tokens
