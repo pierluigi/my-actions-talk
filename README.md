@@ -44,4 +44,4 @@ You need to change the following values:
 Done! Have fun filing bug reports using Siri ;)
 
 ### Credits
-Thanks to [Bas Peters](https://github.com/bas) and [Sebass Van Boxel](https://github.com/svanboxel) for 
+Thanks to [Bas Peters](https://github.com/bas) and [Sebass Van Boxel](https://github.com/svanboxel)
