@@ -26,7 +26,7 @@ You can also watch a prerecoreded demo video on my YouTube channel: https://yout
 3. Install my Siri Shortcut by following this iCloud link on your iPhone: https://www.icloud.com/shortcuts/0f28733463b94c8fafda83c23801be4d **Please note** You may need to enable the `Allow Untrusted Shortcuts` flag under `Settings -> Shortcuts` on you iOS device if you are receiving an alert when trying to install my Shortcut.
 4. Modify the Shortcut with your own values (see screenshot below). Open the Shortcuts and change the `USERNAME` and `REPOSITORY` with your own GitHub values (e.g. `pierluigi` and `actions-demo` in this case) inside the `URL` field. Expand the "Get contents of URL" section `Show More ->  Headers - Authorization` and add your own GitHub PAT.
 
-![Siri Shortcut info](shortcuts-info.jpeg?raw=true "Siri Shortcut info")
+<img src="https://raw.githubusercontent.com/pierluigi/my-actions-talk/master/shortcuts-info.jpeg" width="380" />
 
 Done! Have fun filing bug reports using Siri ;)
 
