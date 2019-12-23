@@ -21,7 +21,7 @@ Watch a prerecoreded demo video on my YouTube channel to see what this is about:
 
 **Create your LUIS AI Cognitive Service Endpoint**
 
-Follow the instructions inside the LUIS folder.
+Follow the instructions inside the [LUIS folder](https://github.com/pierluigi/my-actions-talk/tree/master/LUIS).
 
 **Import the Siri Shortcut**
 
