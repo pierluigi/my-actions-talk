@@ -5,7 +5,7 @@ This is the repository referenced in [my GitHub Actions talk](https://docs.googl
 ## Demos
 This repository contains the code to run the following demos as part of my talk.
 
-### Demo 1. ⚡️ Simple CI/CD with NodeJS
+### Demo 1. ☁️ Simple CI/CD with NodeJS
 
 TODO
 
@@ -21,7 +21,7 @@ Watch a prerecoreded demo video on my YouTube channel to see what this is about:
 
 **Create your LUIS AI Cognitive Service Endpoint**
 
-TODO
+Follow the instructions inside the LUIS folder.
 
 **Import the Siri Shortcut**
 
@@ -43,4 +43,5 @@ You need to change the following values:
 
 Done! Have fun filing bug reports using Siri ;)
 
-### Thank you!
+### Credits
+Thanks to [Bas Peters](https://github.com/bas) and [Sebass Van Boxel](https://github.com/svanboxel) for 
