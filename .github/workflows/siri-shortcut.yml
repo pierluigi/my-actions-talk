@@ -28,6 +28,7 @@ jobs:
           owner: ${{ github.actor }}
           body: ${{ github.event.client_payload.description }}
           repository: ${{ github.repository }}
+          ISSUE_LABEL: ${{ jobs.label-issue.env.ISSUE_LABEL }}
         with:
           github-token: ${{github.token}}
           script: |
