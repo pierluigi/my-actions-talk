@@ -12,28 +12,23 @@ jobs:
           node-version: 10.x
       - run: npm install
         working-directory: ./.github/issues-autolabeler
-      - name: label_issue
+      - name: luis_label
         uses: ./.github/issues-autolabeler
         with:
           issue: ${{github.event.client_payload.description}}
         env:
           LUIS_APP_ID: ${{ secrets.LUIS_APP_ID }}
           LUIS_APP_KEY: ${{ secrets.LUIS_APP_KEY }}
-  create-issue:
-    runs-on: ubuntu-latest
-    needs: 'label-issue'
-    steps:
-      - uses: actions/github-script@0.3.0
+      - name: create_issue
+        uses: actions/github-script@0.3.0
         env:
           owner: ${{ github.actor }}
           body: ${{ github.event.client_payload.description }}
           repository: ${{ github.repository }}
-          ISSUE_LABEL: ${{ jobs.label-issue.env.ISSUE_LABEL }}
         with:
           github-token: ${{github.token}}
           script: |
             const { body, owner, repository } = process.env;
             const title = "New issue report";
             const user_repo = repository.split('/');
-
             github.issues.create({ owner, repo: user_repo[1], title, body, labels: [process.env.ISSUE_LABEL] })
